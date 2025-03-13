@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Lifestyle and Preferences Survey</h1>
+      <p id="description">We value your input! This short survey is designed to learn more about your daily habits, preferences, and lifestyle choices. Your responses will help us better understand what people enjoy and how they work. It only takes a few minutes to complete, and your feedback is greatly appreciated. Thank you for participating!</p>
+    </header>
+    <main>
+      <form id="survey-form" action="#" method="POST">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="name" id="name-label">Name (required):</label>
+          <input type="text" id="name" name="name" placeholder="Ex. John Doe" required> <br>
+
+          <label for="email" id="email-label">Email (required):</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required/> <br>
+
+          <label for="number" id="number-label">Age (optional):</label>
+          <input type="number" id="number" name="age" min="3" max="100" placeholder="Age">
+        </fieldset>
+
+        <p><label for="dropdown">What is your current occupation?</label></p>
+        <select id="dropdown" name="employment">
+            <option value="select" selected disabled >Select an option</option>
+            <option value="student">Student</option>
+            <option value="employed">Employed</option>
+            <option value="self-employed">Self-employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="retired">Retired</option>
+            <option value="other">Other</option>
+          </select> <br>
+
+          <p>Do you prefer working remotely?</p>
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="preference" value="yes">
+          <label for="no">No</label>
+          <input type="radio" id="no" name="preference" value="no">
+
+          <p>What hobbies do you enjoy? (Select all that apply)</p>
+          <label for="reading">Reading</label>
+          <input type="checkbox" id="reading" name="hobby" value="reading">
+          <label for="traveling">Traveling</label>
+          <input type="checkbox" id="traveling" name="hobby" value="traveling">
+          <label for="cooking">Cooking</label>
+          <input type="checkbox" id="cooking" name="hobby" value="cooking">
+          <label for="sports">Sports/Exercise</label>
+          <input type="checkbox" id="sports" value="sports-exercise" name="hobby">
+          <label for="movie">Watching movies/TV shows</label>
+          <input type="checkbox" id="movie" value="watching-movies-tv-shows" name="hobby">
+          <label for="gardening">Gardening</label>
+          <input type="checkbox" id="gardening" value="gardening" name="hobby">
+          <label for="video-game">Playing video games</label>
+          <input type="checkbox" id="video-game" value="playing-video-games" name="hobby">
+          <label for="diy">Crafting/DIY projects</label>
+          <input type="checkbox" id="diy" value="crafting-diy-projects" name="hobby">
+          <label for="music">Music/Playing instruments</label>
+          <input type="checkbox" id="music" value="music-playing-instruments" name="hobby">
+          <label for="other">Other</label>
+          <input type="checkbox" id="other" value="other" name="hobby" checked>
+
+
+        <p><label for="comment">Any comments or suggestions?</label></p>
+        <textarea id="comment" name="comment" rows="6" cols="25" placeholder="Enter your comment..."></textarea>
+
+
+      <p><button type="submit" id="submit">Submit</button></p>
+
+
+      </form>
+    </main>
+  </body>
+</html>

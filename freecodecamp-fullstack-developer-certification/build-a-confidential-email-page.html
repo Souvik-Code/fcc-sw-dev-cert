@@ -1,0 +1,73 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidential Email</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main id="email">
+    <div id="confidential">
+      <p>CONFIDENTIAL</p>
+    </div>
+    <div id="top-secret">
+      <p>TOP SECRET</p>
+    </div>
+    <p>Dear Agent <span class="blurred">Mocha,</span></p>
+    <p>The situation is critical. The secret recipe for our <span class="blurred">Ultra-Rich Cocoa Mix</span> has been stolen by the <span class="blurred">notorious Chocolatier Rogue</span>. This mix is the foundation of our world-renowned hot chocolate empire.</p>
+    <p>Our intelligence indicates that <span class="blurred">Chocolatier Rogue</span> plans to sell the recipe at a black-market dessert auction in a hidden dessert bunker. Your mission is to locate the auction, recover the recipe, and ensure that no copies are leaked.</p>
+    <p>This mission requires the utmost discretion. Any slip-up could lead to global dessert domination by Rogue. Proceed with caution and precision.</p>
+    <p>Good luck, Agent <span class="blurred">Mocha.</span></p>
+  </main>
+</body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+
+#email{
+  box-sizing:border-box;
+  padding: 50px;
+  margin:50px auto;
+  width: 500px;
+  border: 2px solid #979797;
+  position:relative;
+  overflow:hidden;
+  background-color:#ffffee;
+  box-shadow: 5px 5px 10px 6px #d5d5d5;
+}
+
+#confidential, #top-secret{
+  display:inline-block;
+  padding: 2px;
+  border:3px solid red;
+  margin-left: 50px;
+  font-size: 20px;
+  color: red;
+  font-weight: 900;
+  text-align: center;
+  
+}
+
+#top-secret{
+  transform: scale(1.2) translate(140px, 295px) rotate(10deg);
+}
+
+#confidential{
+  transform: scale(1.5) translate(60px, 30px) rotate(-30deg);
+}
+
+.blurred{
+  filter: blur(3px);
+}
+
+** end of undefined **
+

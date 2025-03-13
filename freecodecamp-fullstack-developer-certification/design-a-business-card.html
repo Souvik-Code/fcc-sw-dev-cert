@@ -1,0 +1,91 @@
+** start of html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Business Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="business-card">
+        <main>
+            <img class="profile-image" src="https://www.creativefabrica.com/wp-content/uploads/2021/07/13/Free-3d-luxury-logo-mockup-template-Graphics-14677124-1.jpg" alt="A mockup brand logo" width="240">
+            <p class="full-name">John Doe</p>
+            <p class="designation">Software Developer</p>
+            <p class="company">@worldAI</p>
+            <hr>
+
+            <p>Email: fake@email.com</p>
+            <p>Ph: (012) 345-6789</p>
+            <a href="#">Portfolio</a>
+            <hr>
+
+            <div class="social-media">
+                <h2>Connect with me</h2>
+                <a href="https://x.com">Twitter</a>
+                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="https://github.com">GitHub</a>
+            </div>
+        </main>
+
+    </div>
+</body>
+
+</html>
+
+** end of html **
+
+** start of css **
+
+body{
+  background-color: rosybrown;
+  font-family: Arial, sans-serif;
+}
+
+p{
+  margin: 5px 0;
+}
+a{
+  text-decoration:none;
+  color: brown;
+  margin:0 3px;
+}
+a:hover{
+  text-decoration:underline;
+}
+
+
+.business-card{
+  width:300px;
+  background-color:#a6a3ff;
+  padding: 20px;
+  margin-top:100px;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:16px;
+}
+
+hr{
+  border-top:1px;
+  border-style:dashed;
+  border-color:slategray;
+}
+
+h2{
+  font-size: 18px;
+}
+
+.full-name{
+  font-size: 20px;
+  font-weight:bold;
+}
+.designation, .company{
+  font-size: 15px;
+}
+
+** end of css **
+
